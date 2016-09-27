@@ -6,7 +6,7 @@ public class thingy
 	private String words;
 	private int number;
 	private double value;
-	private boolean inValid;
+	private boolean isValid;
 	
 	
 	public String getWords()
@@ -23,7 +23,7 @@ public class thingy
 	}
 	public boolean isValid()
 	{
-		return valid;
+		return isValid;
 	}
 	
 			
@@ -41,7 +41,8 @@ public class thingy
 	}
 	public void setValid(boolean valid)
 	{
-		this.valid = valid;
+		this.isValid = isValid;
 	}
+}	
 	
 	

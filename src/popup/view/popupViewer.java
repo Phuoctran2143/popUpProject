@@ -2,6 +2,11 @@ package popup.view;
 
 import javax.swing.JOptionPane;
 
+/**
+ * Popup Viewer class
+ * @author tran.phuoc
+ *@version September 27,2016
+ */
 public class popupViewer
 {
 	
@@ -25,6 +30,20 @@ public class popupViewer
 		String response = "";
 		
 		response = JOptionPane.showInputDialog(null, question);
+		
+		return response;
+	}
+	
+	/**
+	 * Creates a opup to ask a yes/no/cancel type question.
+	 * @param question The question being asked the user
+	 * @return The constant value from JOptionPane for y/n/c.
+	 */
+	public int collectUserOption(String question)
+	{
+		int response = 0;
+		
+		response = JOptionPane.showConfirmDialog(null, question);
 		
 		return response;
 	}
